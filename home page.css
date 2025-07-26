@@ -1,0 +1,265 @@
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Darker Grotesque', sans-serif;
+    
+} /* faz eles encostarem nos cantos para nao existir espaço em branco desnecessário */
+
+/* configurando o header */
+header {
+    background-color: #85CDF5;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    margin-bottom: 0;
+}
+
+/* configurando os h2 do header */
+header h2{
+    width: 222px;
+    height: 30px;
+}
+
+/* ajeitar melhor a linha depois*/
+header h2.hov:hover{ 
+    color: #000;
+    text-decoration: underline;
+}
+
+/* configurando o main */
+/* configurando a parte de adoção */
+.container-adote * {
+    margin-top: 0;
+    margin-bottom: 0; /*tira o espaço que tem entre os elementos*/
+    /*tira o espaço que tem entre o header e o main*/
+}
+
+.container-adote h1 {
+    font-weight: 700;
+    font-size: 85px;
+    margin-top: -30px;
+    margin-bottom: 15px;
+
+    color: #FFFFFF;
+}
+
+.container-adote p{
+    margin-bottom: 20px;
+}
+
+.container-adote{
+    background-image: url('imgs-home-page/lobo principal 2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -442px; /*sobe a imagem pra ficar igual ao do site*/
+    width: 1400;
+    height: 500px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+   
+
+}
+
+.adote-um-lobinho-resumo {
+    width: 630px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/*barra que fica no olho do lobo*/
+.barra{
+    width: 99px;
+    height: 5px;
+    background: #FFFFFF;
+
+    margin-top: 15px;
+    margin-bottom: 18px;
+}
+
+/*Configuração do Sobre*/
+.container-sobre * {
+    margin-top: 0;
+    margin-bottom: 0; /*tira o espaço que tem entre os elementos*/
+}
+
+.container-sobre {
+    margin: 0;
+    background-color: #2C5680;
+    width: 1401;
+    height: 333px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px
+
+}
+
+.container-sobre h2 {
+    font-weight: 700;
+    font-size: 48px;
+    color: #DEB959;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.sobre{
+    width: 960px;   
+    font-weight: 400;
+    font-size: 24px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+/*Configuração dos Valores*/
+.container-valores * {
+    margin-top: 0;
+    margin-bottom: 0; /*tira o espaço que tem entre os elementos*/
+}
+
+.container-valores h2 {
+    font-weight: 700;
+    font-size: 48px;
+    color: #DEB959;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.container-valores{
+    background-color: #333333;
+    width: 1400;
+    height: 625px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.valores {
+    display: flex;
+    flex-direction: row;
+}
+
+.proteção,  .carinho, .companheirismo, .resgate {
+    width: 195px;
+    height: 428px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    text-align: center;
+}
+
+.circulo{
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    width: 190px;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.valores h2{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.valores p{
+    width: 195px;
+    height: 140px;
+    margin-top: 30px;
+
+    font-family: Darker Grotesque;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+
+
+/*Configurações dos Exemplos*/
+
+
+.container-exemplos {
+    width: 1400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-exemplos img {
+    width: 430px;
+    height: 328px;
+}
+
+.container-exemplos h2{
+    font-weight: 700;
+    font-size: 48px;
+    color: #DEB959;
+}
+
+
+.container-exemplos h3{
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+#idade{
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#descricao{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.info-lobo-1 p, .info-lobo-2 p{
+    width: 461px;
+}
+
+.info-lobo-1, .info-lobo-2 {
+
+}
+
+
+
+.lobo-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.lobo-2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+}
