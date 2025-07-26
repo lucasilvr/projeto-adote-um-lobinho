@@ -51,7 +51,7 @@ header h2.hov:hover{
 }
 
 .container-adote{
-    background-image: url('imgs-home-page/lobo principal 2.png');
+    background-image: url('../imgs-home-page/lobo principal 2.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center -442px; /*sobe a imagem pra ficar igual ao do site*/
@@ -205,10 +205,57 @@ header h2.hov:hover{
     justify-content: center;
 }
 
+/*AJEITANDO IMAGEM/BORDA*/
 .container-exemplos img {
     width: 430px;
     height: 328px;
+    position: relative;
+    z-index: 2;
 }
+
+#borda-lobo {
+    position: relative;
+    width: 430px;
+    height: 328px;
+}
+
+#borda-lobo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.borda-azul {
+    width: 430px;
+    height: 328px;
+    position: absolute;
+    bottom: 10%;
+    right: 8%;
+    background-color: #2C5680;
+    z-index: 1;
+    border: 4px solid #000;
+}
+
+#borda-lobo2 {
+    position: relative;
+    width: 430px;
+    height: 328px;
+}
+
+
+.borda-azul2 {
+    width: 430px;
+    height: 328px;
+    position: absolute;
+    bottom: 8%;
+    left: 8%;
+    background-color: #2C5680;
+    z-index: 1;
+    border: 4px solid #000;
+}
+
+/*FINAL DA BARRA/IMAGEM*/
 
 .container-exemplos h2{
     font-weight: 700;
@@ -233,6 +280,9 @@ header h2.hov:hover{
 #descricao{
     font-weight: 400;
     font-size: 24px;
+    font-family: Darker Grotesque;
+    line-height: 20px;
+    margin-bottom: 60px;
 }
 
 .info-lobo-1 p, .info-lobo-2 p{
@@ -240,10 +290,8 @@ header h2.hov:hover{
 }
 
 .info-lobo-1, .info-lobo-2 {
-
+    width: 461px;
 }
-
-
 
 .lobo-1{
     display: flex;
@@ -251,7 +299,7 @@ header h2.hov:hover{
     align-items: center;
     justify-content: center;
 
-    gap: 30px;
+    gap: 60px;
     margin-bottom: 40px;
 }
 
@@ -261,5 +309,102 @@ header h2.hov:hover{
     align-items: center;
     justify-content: center;
 
-    gap: 30px;
+    gap: 60px;
+}
+
+.info-lobo-2 *{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+
+/*Configuração do Footer*/
+
+footer *{
+    margin-top: 0;
+    margin-bottom: 0; /*tira o espaço que tem entre os elementos*/
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #333333;
+    border-top: 5px solid;
+    border-image: linear-gradient(to right, #DEB959, #2C5680) 1;
+}
+
+.infos{
+    background-color: #333333;
+    width: 100%;
+    height: 270px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.footer.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 40px;
+    gap: 20px;
+    font-size: 18px;
+    margin-right: 0;
+    line-height: 15px;
+    letter-spacing: 0%;
+}
+
+.endereço, .telefone, .email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.endereço{
+    width: 378px;
+}
+
+.footer.info button {
+    width: 144px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #DEB959;
+    color: #353535;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.footer.info button:hover {
+    background-color: #c5a04a;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    background-color: #333333;
+    color: #FFFFFF;
+    min-width: 200px;
+    margin-right: 100px;
+}
+
+.logo p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.logo img {
+    width: 104px;
+    height: 104px;
 }
