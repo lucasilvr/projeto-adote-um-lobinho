@@ -55,11 +55,18 @@ main p{
 }
 /*----------------footer-------------------*/
 footer{
-    width: 100%;
-    height:275px;
-    background:#333333;
-       
+    
+  width: 100%;
+  height: 275px;
+  border-top: 5px solid transparent;
+  background-image: 
+    linear-gradient(#333333, #333333),  
+    linear-gradient(270deg, #2C5680 0%, #DEB959 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
+
+       
 .footer{
     display: flex;
     flex-direction: row;    
