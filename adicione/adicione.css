@@ -1,27 +1,38 @@
-*{
+body, html{
     margin: 0;
     padding: 0;
+    height: 100%;
+    font-family: 'Darker Grotesque', sans-serif;
+    
+} /* faz eles encostarem nos cantos para nao existir espaço em branco desnecessário */
 
-}
-header{
-    width: 100%;
-    height: 130px;
-    background: #85CDF5;
+header {
+    background-color: #85CDF5;
+    padding: 10px 20px;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    padding:10px 20px ;
+    align-items: center;    
     margin-bottom: 0;
-    font-family: 'Darker Grotesque';
-    color: #333333;    
-    font-weight: 700;
+}
+
+/* configurando os h2 do header */
+header h2{
+    width: 222px;
+    height: 30px;
     font-size: 30px;
 }
-header a{
-    text-decoration: none;
-    color: inherit;
+
+header h2:hover{ 
+    color: #000;
+    text-decoration: underline;
+    cursor: pointer;
 }
+
+header a {
+    text-decoration: none;
+    color:#000
+}
+
 .lobinho a img {
     width: 95px;
     height: 110px;    
@@ -29,9 +40,8 @@ header a{
 /*--------------- main------------*/
 .box{
     width: 958px;
-    height: 874px;
-    margin: 180px 221px 387px 221px ;
-    
+    height: 820px;
+    margin: 100px auto;
     border: #333333 solid;
 }
 .box h1{
@@ -39,7 +49,6 @@ header a{
     font-family: 'Darker Grotesque';
     font-weight: 600;
     font-size: 60px;
-    leading-trim: NONE;
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
@@ -61,7 +70,7 @@ header a{
 .campoduplo{
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 20px;
 }
 .campoduplo div{
     display: flex;
@@ -75,7 +84,7 @@ header a{
     border: 1px solid #333333
 }
 #idade{
-    width: 177px;
+    width: 170px;
     height: 39px;
     border-width: 1px;
     background: #E6E6E6;
@@ -102,58 +111,71 @@ header a{
     border-width: 1px;
     background: #2C5680;
     border: 1px solid #333333;
-    margin-top: 50px;
     margin-left:374px ;
     align-items: center;
     color: #FFFFFF;
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 24px;
+    cursor: pointer;
 }
+
+.box form button:hover {
+    background-color: #234461; /* tom mais escuro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* sombra sutil */
+    transform: scale(1.02); /* leve crescimento */
+    color: #f0f8ff; /* branco azulado */
+}
+
 /*-----------Footer-------------*/
+footer *{
+    margin-top: 0;
+    margin-bottom: 0; /*tira o espaço que tem entre os elementos*/
+}
+
 footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #333333;
+    border-top: 5px solid;
+    border-image: linear-gradient(to right, #DEB959, #2C5680) 1;
+}
+
+.infos{
+    background-color: #333333;
     width: 100%;
-    height: 275px;
-    background: #333333;
-    
-}
-.footer{
-    display: flex;
-    flex-direction: row;    
-}
-.footer iframe{
-    width: 250px;
-    height: 168px;
-    margin-top: 51px;
-    margin-left:219px;
-}
-.informaçao{
-    display: flex;
-    flex-direction: column;
-    width: 378px;
-    height: 102px;
-    margin-top: 51px;
-    margin-left:40px;
-    gap: 20px;
-    font-size: 18px;
-    margin-right: 0;  
-    
-    
-}
-.endereço,.telefone,.email{
+    height: 270px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-family: 'Darker Grotesque';
-    font-weight: 400;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.footer.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 40px;
+    gap: 20px;
     font-size: 18px;
-    leading-trim: NONE;
+    margin-right: 0;
     line-height: 15px;
     letter-spacing: 0%;
-    color: #FFFFFF;  
-
 }
-.informaçao button{
+
+.endereço, .telefone, .email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.endereço{
+    width: 378px;
+}
+
+.footer.info button {
     width: 144px;
     height: 30px;
     display: flex;
@@ -167,22 +189,30 @@ footer{
     cursor: pointer;
     font-size: 20px;
 }
-.logo p{
-    width: 119px;
-    height: 24px;
-    margin-top: 51px;
-    margin-left: 179px;
-    color: #FFFFFF;
-    font-family: 'Darker Grotesque';
-    font-weight: 400;
-    font-size: 18px;
-    leading-trim: NONE;
-    line-height: 100%;
-    letter-spacing: 0%;
-}
-.logo img{
-    width: 104px;
-    margin-top: 8px;
-    margin-left: 188px;
 
+.footer.info button:hover {
+    background-color: #c5a04a;
 }
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    background-color: #333333;
+    color: #FFFFFF;
+    min-width: 200px;
+    margin-right: 100px;
+}
+
+.logo p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.logo img {
+    width: 104px;
+    height: 104px;
+}
+

@@ -21,12 +21,19 @@ header {
 header h2{
     width: 222px;
     height: 30px;
+    font-size: 30px;
 }
 
 /* ajeitar melhor a linha depois*/
-header h2.hov:hover{ 
+header h2:hover{ 
     color: #000;
     text-decoration: underline;
+    cursor: pointer;
+}
+
+header a {
+    text-decoration: none;
+    color:#000
 }
 
 /* configurando o main */

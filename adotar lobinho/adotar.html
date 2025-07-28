@@ -1,30 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quem somos</title>
-    <link rel="stylesheet" href="quemsomos.css">
+    <link rel="stylesheet" href="adotar.css">
+    <title>Adotar lobinho</title>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <a href:#><h2>Nossos Lobinhos</h2></a>
+        <h2>Nossos Lobinhos</h2>
         <img src="../imgs-home-page/lobo-header.png" alt="lobinho do header">
         <a href="/Quem somos/quemsomos.html"><h2 class="hov">Quem somos</h2></a>
     </header>
-    
+
+    <!-------------Ainda falta o CSS---------->
     <main>
-        <h1>Quem somos</h1>
-        <p>
-            Gingerbread cookie gingerbread jujubes cake biscuit tart fruitcake. Jujubes <br>
-            chupa chups wafer cheesecake lemon drops. Pastry caramels cookie<br>
-            marshmallow. Chupa chups jelly beans apple pie powder marzipan oat cake<br>
-            jelly-o chupa chups biscuit. Lollipop biscuit jujubes tootsie roll oat cake<br>
-            chocolate bar. 
-        </p>
+        <section class="lobinho">
+            <div class="img">
+                <img src="/imgs-home-page/lobo 1.png" alt="Foto de um lobo">
+            <div class="info-lobo">
+                <h1>Adote o(a) NomeDoLobo</h1>
+                <p class="id">ID: 341459</p>
+
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nome">Seu nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+
+                <div class="form-group">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade">
+                </div>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <button type="submit" class="btn-adotar">Adotar</button>
+                        
+                </div>
+            </form>
+            </div>    
+        </section>
     </main>
-    
+
+
+
+
+
+
+
     <footer>
         <div class="infos">
             <iframe
@@ -32,7 +64,6 @@
                 width="250" height="168" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
-            
             <div class="footer info">
                 <div class="endereço">
                     <img src="../imgs-home-page/endereco.png" alt="">
@@ -56,6 +87,5 @@
             <img src="../imgs-home-page/paws.png" alt="Logo do Projeto Adote um Lobinho">
         </div>
     </footer>
-    
 </body>
 </html>

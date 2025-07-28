@@ -1,102 +1,112 @@
-*{
+body, html{
     margin: 0;
     padding: 0;
-
+    height: 100%;
+    font-family: 'Darker Grotesque', sans-serif;
+    
 }
-header{
-    width: 100%;
-    height: 130px;
-    background: #85CDF5;
+
+header {
+    background-color: #85CDF5;
+    padding: 10px 20px;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    padding:10px 20px ;
+    align-items: center;    
     margin-bottom: 0;
-    font-family: 'Darker Grotesque';
-    color: #333333;    
-    font-weight: 700;
+}
+
+/* configurando os h2 do header */
+header h1{
+    width: 222px;
+    height: 30px;
     font-size: 30px;
 }
-header a{
+
+/* ajeitar melhor a linha depois*/
+header h2:hover{ 
+    color: #000;
+    text-decoration: underline;
+}
+
+header a {
     text-decoration: none;
-    color: inherit;
+    color:#000
 }
-.lobinho a img {
-    width: 95px;
-    height: 110px;    
-}
+
 /*---------------main----------------------*/
-main h1{width: 811px;
-height: 56px;
-margin-top: 50px;
-margin-left: 293.3px;
-color: #000000;
-font-family: 'Roboto';
-font-weight: 400;
-font-size: 48px;
-leading-trim: NONE;
-line-height: 100%;
-letter-spacing: 0%;
-text-align: center;
+main h1{
+    width: 811px;
+    color: #000000;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 48px;
+    margin: 50px 375px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
 }
 main p{
     width: 960px;
     height: 134px;
-    margin: 50px 221px 50px 219px;            
+    margin: 50px 300px;            
     font-family: 'Darker Grotesque';
     font-weight: 400;
     font-size: 24px;
-    leading-trim: NONE;
     line-height: 24px;
     letter-spacing: 15.5%;
     text-align: center;
     color: #000000;
 }
 /*----------------footer-------------------*/
+
+footer *{
+    margin-top: 0;
+    margin-bottom: 0; /*tira o espaço que tem entre os elementos*/
+}
+
 footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #333333;
+    border-top: 5px solid;
+    border-image: linear-gradient(to right, #DEB959, #2C5680) 1;
+}
+
+.infos{
+    background-color: #333333;
     width: 100%;
-    height:275px;
-    background:#333333;
-    
-}
-.footer{
-    display: flex;
-    flex-direction: row;    
-}
-.footer iframe{
-    width: 250px;
-    height: 168px;
-    margin-top: 51px;
-    margin-left:219px;
-}
-.informaçao{
-    display: flex;
-    flex-direction: column;
-    width: 378px;
-    height: 102px;
-    margin-top: 51px;
-    margin-left:40px;
-    gap: 20px;
-    font-size: 18px;
-    margin-right: 0;  
-    
-    
-}
-.endereço,.telefone,.email{
+    height: 270px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-family: 'Darker Grotesque';
-    font-weight: 400;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.footer.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 40px;
+    gap: 20px;
     font-size: 18px;
-    leading-trim: NONE;
+    margin-right: 0;
     line-height: 15px;
     letter-spacing: 0%;
-    color: #FFFFFF;  
-
 }
-.informaçao button{
+
+.endereço, .telefone, .email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.endereço{
+    width: 378px;
+}
+
+.footer.info button {
     width: 144px;
     height: 30px;
     display: flex;
@@ -110,22 +120,29 @@ footer{
     cursor: pointer;
     font-size: 20px;
 }
-.logo p{
-    width: 119px;
-    height: 24px;
-    margin-top: 51px;
-    margin-left: 179px;
-    color: #FFFFFF;
-    font-family: 'Darker Grotesque';
-    font-weight: 400;
-    font-size: 18px;
-    leading-trim: NONE;
-    line-height: 100%;
-    letter-spacing: 0%;
-}
-.logo img{
-    width: 104px;
-    margin-top: 8px;
-    margin-left: 188px;
 
+.footer.info button:hover {
+    background-color: #c5a04a;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    background-color: #333333;
+    color: #FFFFFF;
+    min-width: 200px;
+    margin-right: 100px;
+}
+
+.logo p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.logo img {
+    width: 104px;
+    height: 104px;
 }
