@@ -113,10 +113,11 @@ header a{
 /*-----------Footer-------------*/
 footer{
     width: 100%;
-    height: 275px;
+    height:275px;
     background: #333333;
-    
+        
 }
+
 .footer{
     display: flex;
     flex-direction: row;    
@@ -142,15 +143,18 @@ footer{
 }
 .endereço,.telefone,.email{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: row;    
+    align-items: center;  
+    gap: 10px ;  
     font-family: 'Darker Grotesque';
     font-weight: 400;
     font-size: 18px;
     leading-trim: NONE;
     line-height: 15px;
     letter-spacing: 0%;
-    color: #FFFFFF;  
+    color: #FFFFFF; 
+
+     
 
 }
 .informaçao button{
