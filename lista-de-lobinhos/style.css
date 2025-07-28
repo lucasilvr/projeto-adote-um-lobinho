@@ -1,0 +1,338 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+header {
+  background-color: #85cdf5;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+/* configurando os h2 do header */
+header h2 {
+  width: 222px;
+  height: 30px;
+}
+
+/* ajeitar melhor a linha depois*/
+header h2.hov:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* CSS Da Main */
+main {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+/* bloco principal: lista de Lobos */
+.lista-lobos {
+  width: 70%;
+  max-width: 1100px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* controles da lista */
+.lista-lobos__controles {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.lista-lobos__grupo-busca {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* cntainer para a busca e o ícone */
+.container-busca {
+  position: relative; 
+  display: flex;
+  align-items: center;
+  margin-right: 10px; 
+}
+
+.lista-lobos__input-busca {
+  height: 57px;
+  font-size: 23px;
+  padding: 0 15px;
+  width: 900px;
+  padding-left: 50px;
+}
+
+.lista-lobos__botao-adicionar {
+  width: 130px;
+  height: 56px;
+  background-color: #DEB959;
+  color: #fff;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+/* posicionar o botão da lupa dentro do input */
+.lista-lobos__botao-busca {
+  position: absolute;
+  left: 5px;
+  border: none; 
+  background: none; 
+  cursor: pointer;
+
+}
+
+.lista-lobos__grupo-toggle {
+  margin-top: 15px;
+  gap: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.lista-lobos__grupo-toggle label {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.lista-lobos__checkbox-adotados {
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+}
+
+/* grade onde os cards aparecem */
+.lista-lobos__grade {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* bloco: card do Lobo */
+.card-lobo {
+  width: 1000px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/* container da imagem */
+.card-lobo__container-imagem {
+  position: relative;
+}
+
+.card-lobo__imagem {
+  width: 400px;
+  height: 298px;
+  border: 4px solid #000;
+  object-fit: cover;
+  position: relative;
+  background-color: #eee; /* cor de fundo caso a imagem não carregue */
+}
+
+/* fundo azul decorativo */
+.card-lobo__container-imagem::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 298px;
+  background: #2C5680;
+  border: 4px solid black;
+}
+
+/* container de informações */
+.card-lobo__info {
+  width: 478px;
+}
+
+.card-lobo__cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-lobo__detalhes h2 {
+  font-size: 36px;
+  margin: 0 0 10px;
+}
+
+.card-lobo__detalhes p {
+  font-size: 24px;
+  margin: 0;
+
+}
+
+.card-lobo__adotar-botao {
+  width: 157px;
+  height: 46px;
+  font-size: 36px;
+  font-weight: 600px;
+  background-color: #DEB959;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+.card-lobo__adotar-botao:disabled {
+  background-color: #7AAC3A;
+  cursor: not-allowed;
+}
+
+.card-lobo__descricao p {
+  font-size: 24px;
+  font-weight: 400px;
+  line-height: 1.2;
+  font-family: "Darker Grotesque";
+}
+
+/* alinhamento, pesquisei pois eu não sabia fazer */
+.card-lobo--alinhado-inicio .card-lobo__container-imagem::before {
+  top: -25px;
+  left: -25px;
+}
+
+.card-lobo--alinhado-fim {
+  flex-direction: row-reverse;
+}
+
+.card-lobo--alinhado-fim .card-lobo__container-imagem::before {
+  top: -25px;
+  right: -25px;
+}
+
+.card-lobo--alinhado-fim .card-lobo__cabecalho {
+  flex-direction: row-reverse;
+}
+
+.card-lobo--alinhado-fim .card-lobo__descricao p {
+  text-align: right;
+}
+
+/*------------------------------------------------*/
+
+/* paginação */
+.lista-lobos__paginacao button {
+  padding: 8px;
+  margin: 3px;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: 600;
+  color: #000000;
+  background: none;
+  border: none;
+}
+
+.lista-lobos__paginacao button.pagina-ativa {
+  background-color: #DEB959;
+  color: #FFFFFF;
+  padding: 0px 0px;
+}
+
+/* footer */
+
+footer * {
+  margin-top: 0;
+  margin-bottom: 0; /*tira o espaço que tem entre os elementos*/
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #333333;
+  border-top: 5px solid;
+  border-image: linear-gradient(to right, #deb959, #2c5680) 1;
+}
+
+.infos {
+  background-color: #333333;
+  width: 100%;
+  height: 270px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.footer.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 40px;
+  gap: 20px;
+  font-size: 18px;
+  margin-right: 0;
+  line-height: 15px;
+  letter-spacing: 0%;
+}
+
+.endereço,
+.telefone,
+.email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.endereço {
+  width: 378px;
+}
+
+.footer.info button {
+  width: 144px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: #deb959;
+  color: #353535;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.footer.info button:hover {
+  background-color: #c5a04a;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  background-color: #333333;
+  color: #ffffff;
+  min-width: 200px;
+  margin-right: 100px;
+}
+
+.logo p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.logo img {
+  width: 104px;
+  height: 104px;
+}

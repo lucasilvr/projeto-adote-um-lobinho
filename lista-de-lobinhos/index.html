@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lista de Lobinhos</title>
+  </head>
+  <body>
+    <header>
+      <h2>Nossos Lobinhos</h2>
+      <img src="../imgs-home-page/lobo-header.png" alt="lobinho do header" />
+      <h2 class="hov">Quem somos</h2>
+    </header>
+
+    <main>
+      <div class="lista-lobos">
+        <div class="lista-lobos__controles">
+          <div class="lista-lobos__grupo-busca">
+            <div class="container-busca">
+              <input type="text" class="lista-lobos__input-busca" />
+              <button class="lista-lobos__botao-busca">
+                <img src="assets/lupa.svg" alt="Ícone de Lupa" />
+              </button>
+            </div>
+            <button
+              class="lista-lobos__botao-adicionar"
+              onclick="window.location.href='/adicione/adicione.html';"
+            >
+              + Lobo
+            </button>
+          </div>
+          <div class="lista-lobos__grupo-toggle">
+            <input
+              type="checkbox"
+              id="toggle-adotados"
+              class="lista-lobos__checkbox-adotados"
+            />
+            <label for="toggle-adotados">Ver lobinhos adotados</label>
+          </div>
+        </div>
+
+        <div class="lista-lobos__grade"></div>
+
+        <div class="lista-lobos__paginacao" id="controles-paginacao"></div>
+      </div>
+    </main>
+
+    <template id="card-lobo-template">
+      <div class="card-lobo">
+        <div class="card-lobo__container-imagem">
+          <img class="card-lobo__imagem" src="" alt="Foto do lobo" />
+        </div>
+        <div class="card-lobo__info">
+          <div class="card-lobo__cabecalho">
+            <div class="card-lobo__detalhes">
+              <h2 class="card-lobo__nome"></h2>
+              <p class="card-lobo__idade"></p>
+            </div>
+            <div class="card-lobo__acoes">
+              <button class="card-lobo__adotar-botao"></button>
+            </div>
+          </div>
+          <div class="card-lobo__descricao">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <footer>
+      <div class="infos">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2372765861837!2d-43.133965089034916!3d-22.904617479170092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99817e79f0ef45%3A0x165db13c16f3d18f!2sR.%20Passo%20da%20P%C3%A1tria%2C%20156%20-%20Boa%20Viagem%2C%20Niter%C3%B3i%20-%20RJ%2C%2024210-240!5e0!3m2!1sen!2sbr!4v1753470281350!5m2!1sen!2sbr"
+          width="250"
+          height="168"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+        <div class="footer info">
+          <div class="endereço">
+            <img src="../imgs-home-page/endereco.png" alt="" />
+            <p>
+              Av. Milton Tavares de Souza, s/n - Sala 115 B - Boa Viagem,
+              Niterói - RJ, 24210-315
+            </p>
+          </div>
+          <div class="telefone">
+            <img src="../imgs-home-page/telefone.png" alt="" />
+            <p>(21) 2629-5000</p>
+          </div>
+          <div class="email">
+            <img src="../imgs-home-page/email.png" alt="" />
+            <p>contato@exemplo.com</p>
+          </div>
+
+          <button>Quem Somos</button>
+        </div>
+      </div>
+
+      <div class="logo">
+        <p>Desenvolvido com</p>
+        <img
+          src="../imgs-home-page/paws.png"
+          alt="Logo do Projeto Adote um Lobinho"
+        />
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+  </body>
+</html>
