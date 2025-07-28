@@ -74,7 +74,7 @@ header a {
 }
 
 .container-adote{
-    background-image: url('../imgs-home-page/lobo principal 2.png');
+    background-image: url('../assets/lobo principal 2.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center -442px; /*sobe a imagem pra ficar igual ao do site*/

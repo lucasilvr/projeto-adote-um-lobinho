@@ -1,4 +1,3 @@
-// aguarda o conteúdo do DOM ser todo carregado
 document.addEventListener('DOMContentLoaded', () => {
 
     /* funçao que verifica se os dados dos lobos ja foram carregados no localstorage pelo outro script, importante para que sua pagina nao quebre ou tente ser construida antes de ter os dados necessarios*/
