@@ -21,44 +21,174 @@ header h2{
     width: 222px;
     height: 30px;
     font-size: 30px;
-    font-weight: 700;
+    transition: color 0.3s ease;
 }
 
 /* ajeitar melhor a linha depois*/
 header h2:hover{ 
-    color: #000;
-    text-decoration: underline;
+    color: #444;
     cursor: pointer;
 }
+
 
 header a {
     text-decoration: none;
     color:#000
 }
 
+.barra-qm {
+    display: flex;
+    flex-direction: column;
+}
 
-/*ajuste da imagem do lobo*/
+.barra{
+    width: 99px;
+    height: 5px;
+    background-color: #000;
+    margin-top: -12px;
+    margin-left: 60px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
 
-.lobinho {
+.barra-qm:hover .barra {
+    opacity: 1;
+}
+
+
+
+/*Main*/
+.primeiro{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 32px;
-    height: 318px;
-    gap: 125px;
-    background: #F3F3F3;
-    max-width: 100%;
-    justify-content: left;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
-
-.lobinho img {
+.primeiro img{
     width: 200px;
     height: 200px;
-    border-radius: 10000px;
-    object-fit: cover;
+    border-radius: 100%;
+
+    background-repeat: no-repeat;
+    background-position: right 30px; /*ajeitar depois a foto*/
 }
 
+.adote{
+    margin-bottom: 20px;
+}
+
+.adote h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.adote p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+
+.nome-idade{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nome{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 95%;
+}
+
+.idade{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 8%;
+}
+
+/* Estilo dos inputs */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    border: none;
+    border-bottom: 2px solid #aaa;
+    background: transparent;
+    padding: 10px 0;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-bottom-color: #2C5680;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 30px;
+}
+
+/* Campo de email full width */
+.email-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Botão de adotar */
+.btn-adotar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 209px;
+    height: 60px;
+    background-color: #2C5680;
+    color: white;
+    font-size: 36px;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+    border: 1px solid #000;
+    margin-bottom: 50px;
+}
+
+.btn-adotar:hover {
+    background-color: #1f3e5e;
+}
+
+
+
+.segundo{
+    width: 960px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 350px;
+    gap: 30px;
+}
+
+.E-mail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 /*Configuração do Footer*/
 

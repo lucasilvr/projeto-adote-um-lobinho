@@ -4,54 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="adotar.css">
+    <link rel="stylesheet" href="adotar2.css">
     <title>Adotar lobinho</title>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h2>Nossos Lobinhos</h2>
-        <img src="../assets/lobo-header.png" alt="lobinho do header">
-        <a href="/Quem somos/quemsomos.html"><h2 class="hov">Quem somos</h2></a>
+        <a href="../show/show lobinhos.html" class="nossos-lobinhos-link">
+            <h2>Nossos Lobinhos</h2>
+        </a>
+        <a href="../home/home page.html">
+            <img src="../assets/lobo-header.png" alt="lobinho do header">
+        </a>
+        <div class="barra-qm">
+            <a href="/Quem somos/quemsomos.html"><h2 class="hov">Quem somos</h2></a>
+            <div class="barra"></div>
+        </div>
     </header>
 
-    <!-------------Ainda falta o CSS---------->
+
     <main>
-        <section class="lobinho">
-            <div class="img">
-                <img src="../assets/lobo 1.png" alt="Foto de um lobo">
-            <div class="info-lobo">
-                <h1>Adote o(a) NomeDoLobo</h1>
-                <p class="id">ID: 341459</p>
-
-        <form>
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="nome">Seu nome:</label>
-                    <input type="text" id="nome" name="nome">
-                </div>
-
-                <div class="form-group">
-                    <label for="idade">Idade:</label>
-                    <input type="number" id="idade" name="idade">
+        <div class="geral">
+            <div class="primeiro">
+                <img src="../assets/lobo 1.png" alt="Lobinho 1" class="imagem">
+                <div class="adote">
+                    <h1>Adote o(a) NomeDoLobo</h1>
+                    <p>ID:314159</p>
                 </div>
             </div>
 
-            <div class="form-group full-width">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email">
-            </div>
-
-            <button type="submit" class="btn-adotar">Adotar</button>
-                        
+            <div class="segundo">
+                <div class="nome-idade">
+                    <div class="nome">
+                        <label for="nome">Seu nome:</label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+                    <div class="idade">
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" name="idade">
+                    </div>
                 </div>
-            </form>
-            </div>    
-        </section>
+
+                <div class="E-mail">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                
+                <button class="btn-adotar">Adotar</button>
+            </div>
+        </div>
     </main>
-
-
 
 
 
