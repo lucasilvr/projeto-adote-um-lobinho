@@ -6,6 +6,7 @@ body, html{
     
 } /* faz eles encostarem nos cantos para nao existir espaço em branco desnecessário */
 
+/* configurando o header */
 header {
     background-color: #85CDF5;
     padding: 10px 20px;
@@ -22,6 +23,7 @@ header h2{
     font-size: 30px;
 }
 
+/* ajeitar melhor a linha depois*/
 header h2:hover{ 
     color: #000;
     text-decoration: underline;
@@ -33,101 +35,32 @@ header a {
     color:#000
 }
 
-.lobinho a img {
-    width: 95px;
-    height: 110px;    
-}
-/*--------------- main------------*/
-.box{
-    width: 958px;
-    height: 820px;
-    margin: 100px auto;
-    border: #333333 solid;
-}
-.box h1{
-    height: 81px;
-    font-family: 'Darker Grotesque';
-    font-weight: 600;
-    font-size: 60px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-    margin-top: 54px;
-}
-.form{
-    width: 761px;
-    height: 512px;
-    border-width: 1px;
-    border: 1px #333333;
-    margin-top:67px ;
-    margin-left: 98px;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Darker Grotesque';
-    font-weight: 500;
-    font-size: 30px;
-}
-.campoduplo{
+
+/*ajuste da imagem do lobo*/
+
+.lobinho {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-}
-.campoduplo div{
-    display: flex;
-    flex-direction: column;
-}
-#nome{
-    width: 564px;
-    height: 39px;
-    border-width: 1px;
-    background: #E6E6E6;
-    border: 1px solid #333333
-}
-#idade{
-    width: 170px;
-    height: 39px;
-    border-width: 1px;
-    background: #E6E6E6;
-    border: 1px solid #333333
-}
-#foto{
-    width: 760px;
-    height: 39px;
-    border-width: 1px;
-    background: #E6E6E6;
-    border: 1px solid #333333
-}
-#descriçao{
-    width: 760px;
-    height: 250px;
-    border-width: 1px;
-    background: #E6E6E6;
-    border: 1px solid #333333;
-    resize:none
-}
-.box form button{
-    width: 209px;
-    height: 60px;
-    border-width: 1px;
-    background: #2C5680;
-    border: 1px solid #333333;
-    margin-left:374px ;
     align-items: center;
-    color: #FFFFFF;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 24px;
-    cursor: pointer;
+    padding: 32px;
+    height: 318px;
+    gap: 125px;
+    background: #F3F3F3;
+    max-width: 100%;
+    justify-content: left;
 }
 
-.box form button:hover {
-    background-color: #234461; /* tom mais escuro */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* sombra sutil */
-    transform: scale(1.02); /* leve crescimento */
-    color: #f0f8ff; /* branco azulado */
+
+.lobinho img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10000px;
+    object-fit: cover;
 }
 
-/*-----------Footer-------------*/
+
+/*Configuração do Footer*/
+
 footer *{
     margin-top: 0;
     margin-bottom: 0; /*tira o espaço que tem entre os elementos*/

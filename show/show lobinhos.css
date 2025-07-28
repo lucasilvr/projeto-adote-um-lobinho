@@ -17,17 +17,55 @@ header {
 }
 
 /* configurando os h2 do header */
-header h1{
+header h2{
     width: 222px;
     height: 30px;
+    font-size: 30px;
 }
 
-/* ajeitar melhor a linha depois*/
-header h2.hov:hover{ 
+/* configurando o link "Nossos Lobinhos" */
+.nossos-lobinhos-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nossos-lobinhos-link h2 {
+    width: 222px;
+    height: 30px;
+    transition: color 0.3s ease;
+}
+
+.nossos-lobinhos-link:hover h2 {
     color: #000;
     text-decoration: underline;
 }
 
+/* ajeitar melhor a linha depois*/
+header h2:hover{ 
+    color: #000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+header a {
+    text-decoration: none;
+    color:#000
+}
+
+
+.titulo-container {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
+.titulo-container h1{
+    font-weight: 900;
+    font-size: 48px;
+    color: #000000;
+    margin: 0;
+    text-align: center;
+}
 
 .container-exemplos {
     width: 100%;
@@ -37,16 +75,7 @@ header h2.hov:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px 0 40px 0;
-}
-
-.container-exemplos h1{
-    font-weight: 900;
-    font-size: 48px;
-    color: #000000;
-    margin-bottom: 30px;
-    text-align: center;
-    width: 100%;
+    padding: 60px 0 40px 0;
 }
 
 #descricao{
