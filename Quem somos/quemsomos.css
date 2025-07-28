@@ -25,6 +25,8 @@ header {
 header h2{
     width: 222px;
     height: 30px;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 /* configurando o link "Nossos Lobinhos" */

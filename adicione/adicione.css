@@ -20,6 +20,7 @@ header h2{
     width: 222px;
     height: 30px;
     font-size: 30px;
+    font-weight: 700;
 }
 
 header h2:hover{ 
@@ -40,7 +41,7 @@ header a {
 /*--------------- main------------*/
 .box{
     width: 958px;
-    height: 820px;
+    height: 874px;
     margin: 100px auto;
     border: #333333 solid;
 }
@@ -66,6 +67,7 @@ header a {
     font-family: 'Darker Grotesque';
     font-weight: 500;
     font-size: 30px;
+    gap: 15px;
 }
 .campoduplo{
     display: flex;
@@ -118,6 +120,7 @@ header a {
     font-weight: 400;
     font-size: 24px;
     cursor: pointer;
+    margin-top: 50px;
 }
 
 .box form button:hover {
