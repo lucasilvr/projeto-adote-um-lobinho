@@ -25,7 +25,7 @@ header h2{
 }
 
 /* ajeitar melhor a linha depois*/
-header h2:hover{ 
+#nossos:hover{ 
     color: #444;
     cursor: pointer;
 }
