@@ -1,6 +1,10 @@
 async function inicializarLocalStorage() {
     try {
-        const response = await fetch('lobinhos.json');
+        // Determina o caminho correto baseado na localização atual
+        const path = window.location.pathname;
+        const caminhoJson = path.includes('/lista-de-lobinhos/') ? '../lobinhos.json' : 'lobinhos.json';
+        
+        const response = await fetch(caminhoJson);
         if (!response.ok) {
             throw new Error(`Erro ao buscar lobinho.json: ${response.statusText}`);
         }
