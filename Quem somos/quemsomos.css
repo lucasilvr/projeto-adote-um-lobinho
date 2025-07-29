@@ -1,16 +1,19 @@
+
 body, html{
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: 'Darker Grotesque', sans-serif;
+    
+} /* faz eles encostarem nos cantos para nao existir espaço em branco desnecessário */
+.pagina{
+    
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ocupa no mínimo a altura da tela */
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Darker Grotesque', sans-serif;
-}
-
+/* configurando o header */
 header {
     background-color: #85CDF5;
     padding: 10px 20px;
@@ -18,7 +21,6 @@ header {
     justify-content: space-around;
     align-items: center;    
     margin-bottom: 0;
-
 }
 
 /* configurando os h2 do header */
@@ -26,34 +28,43 @@ header h2{
     width: 222px;
     height: 30px;
     font-size: 30px;
-    font-weight: 700;
-}
-
-/* configurando o link "Nossos Lobinhos" */
-.nossos-lobinhos-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.nossos-lobinhos-link h2 {
-    width: 222px;
-    height: 30px;
     transition: color 0.3s ease;
 }
 
-.nossos-lobinhos-link:hover h2 {
-    color: #000;
-    text-decoration: underline;
+/* ajeitar melhor a linha depois*/
+#nossos:hover{ 
+    color: #444;
+    cursor: pointer;
 }
 
-/* ajeitar melhor a linha depois*/
-header h2.hov:hover{ 
-    color: #000;
-    text-decoration: underline;
+
+header a {
+    text-decoration: none;
+    color:#000
+}
+
+.barra-qm {
+    display: flex;
+    flex-direction: column;
+}
+
+.barra{
+    width: 99px;
+    height: 5px;
+    background-color: #000;
+    margin-top: -12px;
+    margin-left: 60px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.barra-qm:hover .barra {
+    opacity: 1;
 }
 
 /*---------------main----------------------*/
 main {
+    flex:1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,6 +109,7 @@ main p{
 footer *{
     margin-top: 0;
     margin-bottom: 0; /*tira o espaço que tem entre os elementos*/
+
 }
 
 footer{
@@ -106,6 +118,8 @@ footer{
     background-color: #333333;
     border-top: 5px solid;
     border-image: linear-gradient(to right, #DEB959, #2C5680) 1;
+    
+    
 }
 
 .infos{

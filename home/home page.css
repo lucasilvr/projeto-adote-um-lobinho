@@ -21,37 +21,42 @@ header h2{
     width: 222px;
     height: 30px;
     font-size: 30px;
-    font-weight: 700;
-}
-
-/* configurando o link "Nossos Lobinhos" */
-.nossos-lobinhos-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.nossos-lobinhos-link h2 {
-    width: 222px;
-    height: 30px;
     transition: color 0.3s ease;
 }
 
-.nossos-lobinhos-link:hover h2 {
-    color: #000;
-    text-decoration: underline;
-}
-
 /* ajeitar melhor a linha depois*/
-header h2:hover{ 
-    color: #000;
-    text-decoration: underline;
+#nossos:hover{ 
+    color: #444;
     cursor: pointer;
 }
+
 
 header a {
     text-decoration: none;
     color:#000
 }
+
+.barra-qm {
+    display: flex;
+    flex-direction: column;
+}
+
+.barra1{
+    width: 99px;
+    height: 5px;
+    background-color: #000;
+    margin-top: -12px;
+    margin-left: 60px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.barra-qm:hover .barra1 {
+    opacity: 1;
+}
+
+
+
 
 /* configurando o main */
 /* configurando a parte de adoção */
