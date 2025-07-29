@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const nome = document.getElementById('nome').value;
         const idade = document.getElementById('idade').value;
         const fotoUrl = document.getElementById('foto').value;
-        const descricao = document.getElementById('descriÃ§ao').value;
+        const descricao = document.getElementById('descriçao').value;
 
         if (!nome || !idade || !fotoUrl || !descricao) {
             alert('Por favor, preencha todos os campos!');
