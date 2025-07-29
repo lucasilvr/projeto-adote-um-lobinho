@@ -1,3 +1,15 @@
+document.addEventListener("DOMContentLoaded", () => {
+
+function verificarEIniciar() {
+        if (localStorage.getItem('lobos')) {
+            // dados foi encontrados, inicia a aplicação
+            iniciarAplicacaoPrincipal();
+        } else {
+            // dados ainda não estão prontos, aguarda 100ms e tenta de novo
+            setTimeout(verificarEIniciar, 100);
+        }
+    }
+
 iniciarAplicacaoPrincipal();
 
 function iniciarAplicacaoPrincipal() {
@@ -158,4 +170,7 @@ function iniciarAplicacaoPrincipal() {
 
     adicionarEventListeners();
     aplicarFiltros();
+    
 }
+verificarEIniciar();
+});

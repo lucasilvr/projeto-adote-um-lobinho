@@ -46,7 +46,7 @@ header a {
     height: 5px;
     background-color: #000;
     margin-top: -12px;
-    margin-left: 60px;
+
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -180,7 +180,7 @@ label {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 350px;
+
     gap: 30px;
 }
 
@@ -282,4 +282,14 @@ footer{
 
 #botaoqs {
     text-decoration: none;
+}
+
+.geral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px;
 }
