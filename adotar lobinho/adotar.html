@@ -23,18 +23,17 @@
         </div>
     </header>
 
-
     <main>
         <div class="geral">
             <div class="primeiro">
-                <img src="../assets/lobo 1.png" alt="Lobinho 1" class="imagem">
+                <img id="imagem-lobo"src="../assets/lobo 1.png" class="imagem">
                 <div class="adote">
-                    <h1>Adote o(a) NomeDoLobo</h1>
-                    <p>ID:314159</p>
+                    <h1 id="titulo-adocao">LOBO NÃO ENCONTRADO</h1>
+                    <p id="id-lobo">ID: NÃO ENCONTRADO</p>
                 </div>
             </div>
 
-            <div class="segundo">
+            <form class="segundo">
                 <div class="nome-idade">
                     <div class="nome">
                         <label for="nome">Seu nome:</label>
@@ -51,14 +50,10 @@
                     <input type="email" id="email" name="email">
                 </div>
                 
-                <button class="btn-adotar">Adotar</button>
-            </div>
+                <button id="botao-adotar" class="btn-adotar">Adotar</button>
+            </form>
         </div>
     </main>
-
-
-
-
 
     <footer>
         <div class="infos">
@@ -90,5 +85,6 @@
             <img src="../assets/paws.png" alt="Logo do Projeto Adote um Lobinho">
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
