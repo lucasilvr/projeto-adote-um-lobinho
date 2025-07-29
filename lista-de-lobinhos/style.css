@@ -367,3 +367,7 @@ footer {
   width: 104px;
   height: 104px;
 }
+
+#botaoqs {
+    text-decoration: none;
+}
