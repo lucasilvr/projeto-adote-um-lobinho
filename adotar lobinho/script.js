@@ -7,7 +7,7 @@ const infoContainer = document.querySelector(".primeiro");
 
 if (lobo) {
   const loboHtml = `
-            <img id="imagem-lobo" src="${lobo.imagem} class="imagem">
+            <img id="imagem-lobo" src="${lobo.imagem}" class="imagem">
             <div class="adote">
                 <h1 id="titulo-adocao">Adote o(a) ${lobo.nome}</h1>
                 <p id="id-lobo">ID: ${lobo.id}</p>
