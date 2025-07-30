@@ -1,5 +1,6 @@
+//isso aqui foi necessario porque tava dando problema no carregamento da pagina, ou seja, o codigo todo é executado quando o DOM estiver pronto
 document.addEventListener("DOMContentLoaded", () => {
-
+//junto foi preciso fazer essa função pois no carregamento da pagina estava dando erro
 function verificarEIniciar() {
         if (localStorage.getItem('lobos')) {
             // dados foi encontrados, inicia a aplicação
